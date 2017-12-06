@@ -1,0 +1,36 @@
+#
+# docker-compose.yml
+#
+# Docker compose file for Postgres to support Bankly App
+#
+# Key Considerations:
+# - Postgres service is on a single external bridge network
+#
+# Author: Gonzalo Vazquez
+#
+
+version: '2'
+
+#
+# Services
+#
+services:
+
+    #
+    # Postgres database
+    #
+    postgresdb:
+      image: postgres:9.6.0
+      volumes:
+        - ./db/postgres:/docker-entrypoint-initdb.d
+      environment:
+        POSTGRES_PASSWORD: my-secret-pw
+        POSTGRES_DB: chores
+
+#
+# Networks
+#
+networks:
+    localnet:
+        # driver: bridge
+        external: true
