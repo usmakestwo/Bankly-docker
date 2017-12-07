@@ -26,6 +26,8 @@ services:
       environment:
         POSTGRES_PASSWORD: my-secret-pw
         POSTGRES_DB: chores
+      ports:
+        - "5432:5432"
 
 #
 # Networks
