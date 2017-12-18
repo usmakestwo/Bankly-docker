@@ -27,6 +27,20 @@ services:
         MYSQL_ROOT_PASSWORD: my-secret-pw
       ports:
         - "3306:3306"
+    
+    #
+    # Chore Services
+    #
+    chores:
+      image: usmakestwo/chore-service:1.0.0
+      volumes:
+        - ./etc/db/mysql/config/chore-service:/config
+      depends_on:
+        - mysqldb
+      links:
+        - mysqldb
+      ports:
+        - "8080:8080"
 
 #
 # Networks
