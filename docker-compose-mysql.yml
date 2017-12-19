@@ -32,7 +32,7 @@ services:
     # Chore Services
     #
     chores:
-      image: usmakestwo/chore-service:1.0.0
+      image: usmakestwo/chore-service:1.0.1
       volumes:
         - ./etc/db/mysql/config/chore-service:/config
       depends_on:
