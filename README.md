@@ -29,12 +29,12 @@ GET http://localhost:8080/bankly/v1/chores?cust_id=1
 
 Get single chores by id:
 ```
-GET http://localhost:8080/bankly/v1/chores?id=1
+GET http://localhost:8080/bankly/v1/chores/?id=1
 ```
 
 Delete single chores by id:
 ```
-DELETE http://localhost:8080/bankly/v1/chores?id=1
+DELETE http://localhost:8080/bankly/v1/chores/?id=1
 ```
 
 To start all services at the same time.
