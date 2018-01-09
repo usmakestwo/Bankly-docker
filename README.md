@@ -24,7 +24,7 @@ The chore service exposes the following endpoints:
 
 Get chore by customer id:
 ```
-GET http://localhost:8080/bankly/v1/chores/?cust_id=1
+GET http://localhost:8080/bankly/v1/chores?cust_id=1
 ```
 
 Get single chores by id:
