@@ -40,5 +40,5 @@ DELETE http://localhost:8080/chore/v1/chores?id=1
 To start all services at the same time.
 
 ```
-docker-compose -f docker-compose-mysql up
+docker-compose -f docker-compose-mysql.yml up
 ```
