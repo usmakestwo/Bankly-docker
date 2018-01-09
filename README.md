@@ -34,7 +34,7 @@ GET http://localhost:8080/chore/v1/chores?id=1
 
 Delete single chores by id:
 ```
-DELETEhttp://localhost:8080/chore/v1/chores?id=1
+DELETE http://localhost:8080/chore/v1/chores?id=1
 ```
 
 To start all services at the same time.
