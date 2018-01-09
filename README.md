@@ -22,14 +22,19 @@ CREATE TABLE chore (
 
 The chore service exposes the following endpoints:
 
-Get chore by id:
+Get chore by customer id:
 ```
-GET http://localhost:8080/chore/v1/chores/?id=3
+GET http://localhost:8080/chore/v1/chores/?cust_id=1
 ```
 
-Get all chores:
+Get single chores by id:
 ```
-http://localhost:8080/chore/v1/chores
+GET http://localhost:8080/chore/v1/chores?id=1
+```
+
+Delete single chores by id:
+```
+DELETEhttp://localhost:8080/chore/v1/chores?id=1
 ```
 
 To start all services at the same time.
